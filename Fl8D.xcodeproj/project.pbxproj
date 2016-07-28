@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7AC5D6521D4A8D9F001CBB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6511D4A8D9F001CBB70 /* AppDelegate.swift */; };
-		7AC5D6541D4A8D9F001CBB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6531D4A8D9F001CBB70 /* ViewController.swift */; };
 		7AC5D6571D4A8D9F001CBB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5D6551D4A8D9F001CBB70 /* Main.storyboard */; };
-		7AC5D65A1D4A8D9F001CBB70 /* Fl8D.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6581D4A8D9F001CBB70 /* Fl8D.xcdatamodeld */; };
 		7AC5D65C1D4A8D9F001CBB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5D65B1D4A8D9F001CBB70 /* Assets.xcassets */; };
 		7AC5D65F1D4A8D9F001CBB70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5D65D1D4A8D9F001CBB70 /* LaunchScreen.storyboard */; };
 		7AC5D66A1D4A8D9F001CBB70 /* Fl8DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6691D4A8D9F001CBB70 /* Fl8DTests.swift */; };
 		7AC5D6751D4A8D9F001CBB70 /* Fl8DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6741D4A8D9F001CBB70 /* Fl8DUITests.swift */; };
+		7AC5D68F1D4A8EB2001CBB70 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC5D6831D4A8E6C001CBB70 /* CoreData.framework */; };
+		7AC5D6901D4A8EB9001CBB70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC5D6851D4A8E82001CBB70 /* CoreLocation.framework */; };
+		7AC5D6991D4A8F9B001CBB70 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6981D4A8F9B001CBB70 /* ChartTableViewCell.swift */; };
+		7AC5D69B1D4A8FBF001CBB70 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D69A1D4A8FBF001CBB70 /* MainViewController.swift */; };
+		7AC5D69F1D4A90F6001CBB70 /* Fl8D.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D69D1D4A90F6001CBB70 /* Fl8D.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +40,7 @@
 /* Begin PBXFileReference section */
 		7AC5D64E1D4A8D9F001CBB70 /* Fl8D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fl8D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC5D6511D4A8D9F001CBB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AC5D6531D4A8D9F001CBB70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AC5D6561D4A8D9F001CBB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7AC5D6591D4A8D9F001CBB70 /* Fl8D.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fl8D.xcdatamodel; sourceTree = "<group>"; };
 		7AC5D65B1D4A8D9F001CBB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AC5D65E1D4A8D9F001CBB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AC5D6601D4A8D9F001CBB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		7AC5D6701D4A8D9F001CBB70 /* Fl8DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fl8DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC5D6741D4A8D9F001CBB70 /* Fl8DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fl8DUITests.swift; sourceTree = "<group>"; };
 		7AC5D6761D4A8D9F001CBB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AC5D6831D4A8E6C001CBB70 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7AC5D6851D4A8E82001CBB70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7AC5D6981D4A8F9B001CBB70 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartTableViewCell.swift; path = Views/TerminalCharts/ChartTableViewCell.swift; sourceTree = "<group>"; };
+		7AC5D69A1D4A8FBF001CBB70 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		7AC5D69E1D4A90F6001CBB70 /* Fl8D.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fl8D.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC5D6901D4A8EB9001CBB70 /* CoreLocation.framework in Frameworks */,
+				7AC5D68F1D4A8EB2001CBB70 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,7 @@
 				7AC5D6681D4A8D9F001CBB70 /* Fl8DTests */,
 				7AC5D6731D4A8D9F001CBB70 /* Fl8DUITests */,
 				7AC5D64F1D4A8D9F001CBB70 /* Products */,
+				7AC5D6821D4A8E6C001CBB70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +108,15 @@
 		7AC5D6501D4A8D9F001CBB70 /* Fl8D */ = {
 			isa = PBXGroup;
 			children = (
+				7AC5D6951D4A8F0D001CBB70 /* AppConfigurations */,
 				7AC5D6511D4A8D9F001CBB70 /* AppDelegate.swift */,
-				7AC5D6531D4A8D9F001CBB70 /* ViewController.swift */,
-				7AC5D6551D4A8D9F001CBB70 /* Main.storyboard */,
 				7AC5D65B1D4A8D9F001CBB70 /* Assets.xcassets */,
-				7AC5D65D1D4A8D9F001CBB70 /* LaunchScreen.storyboard */,
+				7AC5D6921D4A8EEB001CBB70 /* Controllers */,
+				7AC5D6911D4A8EDF001CBB70 /* CoreData */,
+				7AC5D6931D4A8EF6001CBB70 /* Helpers */,
 				7AC5D6601D4A8D9F001CBB70 /* Info.plist */,
-				7AC5D6581D4A8D9F001CBB70 /* Fl8D.xcdatamodeld */,
+				7AC5D69C1D4A8FDB001CBB70 /* StoryBoards */,
+				7AC5D6941D4A8F02001CBB70 /* Views */,
 			);
 			path = Fl8D;
 			sourceTree = "<group>";
@@ -126,6 +137,78 @@
 				7AC5D6761D4A8D9F001CBB70 /* Info.plist */,
 			);
 			path = Fl8DUITests;
+			sourceTree = "<group>";
+		};
+		7AC5D6821D4A8E6C001CBB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AC5D6851D4A8E82001CBB70 /* CoreLocation.framework */,
+				7AC5D6831D4A8E6C001CBB70 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AC5D6911D4A8EDF001CBB70 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7AC5D69D1D4A90F6001CBB70 /* Fl8D.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		7AC5D6921D4A8EEB001CBB70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AC5D69A1D4A8FBF001CBB70 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7AC5D6931D4A8EF6001CBB70 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		7AC5D6941D4A8F02001CBB70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AC5D6971D4A8F6C001CBB70 /* TerminalCharts */,
+				7AC5D6961D4A8F62001CBB70 /* PageIndicators */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7AC5D6951D4A8F0D001CBB70 /* AppConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AppConfigurations;
+			sourceTree = "<group>";
+		};
+		7AC5D6961D4A8F62001CBB70 /* PageIndicators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PageIndicators;
+			sourceTree = "<group>";
+		};
+		7AC5D6971D4A8F6C001CBB70 /* TerminalCharts */ = {
+			isa = PBXGroup;
+			children = (
+				7AC5D6981D4A8F9B001CBB70 /* ChartTableViewCell.swift */,
+			);
+			name = TerminalCharts;
+			sourceTree = "<group>";
+		};
+		7AC5D69C1D4A8FDB001CBB70 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				7AC5D6551D4A8D9F001CBB70 /* Main.storyboard */,
+				7AC5D65D1D4A8D9F001CBB70 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC5D6541D4A8D9F001CBB70 /* ViewController.swift in Sources */,
-				7AC5D65A1D4A8D9F001CBB70 /* Fl8D.xcdatamodeld in Sources */,
+				7AC5D6991D4A8F9B001CBB70 /* ChartTableViewCell.swift in Sources */,
 				7AC5D6521D4A8D9F001CBB70 /* AppDelegate.swift in Sources */,
+				7AC5D69B1D4A8FBF001CBB70 /* MainViewController.swift in Sources */,
+				7AC5D69F1D4A90F6001CBB70 /* Fl8D.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -405,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -419,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fl8D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.Fl8D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fl8D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.Fl8D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,13 +613,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7AC5D6581D4A8D9F001CBB70 /* Fl8D.xcdatamodeld */ = {
+		7AC5D69D1D4A90F6001CBB70 /* Fl8D.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7AC5D6591D4A8D9F001CBB70 /* Fl8D.xcdatamodel */,
+				7AC5D69E1D4A90F6001CBB70 /* Fl8D.xcdatamodel */,
 			);
-			currentVersion = 7AC5D6591D4A8D9F001CBB70 /* Fl8D.xcdatamodel */;
-			path = Fl8D.xcdatamodeld;
+			currentVersion = 7AC5D69E1D4A90F6001CBB70 /* Fl8D.xcdatamodel */;
+			name = Fl8D.xcdatamodeld;
+			path = CoreData/Fl8D.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11198.3" systemVersion="16A201w" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Airport" syncable="YES" codeGenerationType="class"/>
+    <entity name="Chart" syncable="YES" codeGenerationType="class"/>
+    <entity name="ChartContent" syncable="YES" codeGenerationType="class"/>
+    <entity name="ChartInfo" syncable="YES" codeGenerationType="class"/>
+    <entity name="ChartPoint" syncable="YES" codeGenerationType="class"/>
+    <entity name="UserCustomize" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="Airport" positionX="-63" positionY="-18" width="128" height="45"/>
+        <element name="Chart" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="ChartContent" positionX="-36" positionY="9" width="128" height="45"/>
+        <element name="ChartInfo" positionX="-18" positionY="27" width="128" height="45"/>
+        <element name="ChartPoint" positionX="18" positionY="63" width="128" height="45"/>
+        <element name="UserCustomize" positionX="0" positionY="45" width="128" height="45"/>
+    </elements>
+</model>
