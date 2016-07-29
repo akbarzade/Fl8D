@@ -1,17 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11198.3" systemVersion="16A201w" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Airport" syncable="YES" codeGenerationType="class"/>
-    <entity name="Chart" syncable="YES" codeGenerationType="class"/>
-    <entity name="ChartContent" syncable="YES" codeGenerationType="class"/>
-    <entity name="ChartInfo" syncable="YES" codeGenerationType="class"/>
-    <entity name="ChartPoint" syncable="YES" codeGenerationType="class"/>
-    <entity name="UserCustomize" syncable="YES" codeGenerationType="class"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11198.3" systemVersion="16A254g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Airport" representedClassName="Airport" syncable="YES" codeGenerationType="class">
+        <attribute name="airportCity" attributeType="String" syncable="YES"/>
+        <attribute name="airportCountry" attributeType="String" syncable="YES"/>
+        <attribute name="airportIATA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="airportICAO" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="airportLocationLatitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="airportLocationLongitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="airportName" attributeType="String" syncable="YES"/>
+        <attribute name="airportRunways" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="airportCharts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chart" inverseName="airport" inverseEntity="Chart" syncable="YES"/>
+    </entity>
+    <entity name="Chart" representedClassName="Chart" syncable="YES" codeGenerationType="class">
+        <attribute name="airportICAO" attributeType="String" syncable="YES"/>
+        <attribute name="chartChecked" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chartDescription" attributeType="String" syncable="YES"/>
+        <attribute name="chartId" attributeType="String" syncable="YES"/>
+        <attribute name="chartIndex" attributeType="String" syncable="YES"/>
+        <attribute name="chartType" attributeType="Integer 16" minValueString="0" maxValueString="6" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLocational" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="airport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Airport" inverseName="airportCharts" inverseEntity="Airport" syncable="YES"/>
+        <relationship name="chartContent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChartContent" inverseName="chart" inverseEntity="ChartContent" syncable="YES"/>
+        <relationship name="chartInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChartInfo" inverseName="chart" inverseEntity="ChartInfo" syncable="YES"/>
+        <relationship name="chartPoint" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChartPoint" inverseName="chart" inverseEntity="ChartPoint" syncable="YES"/>
+        <relationship name="userCustomize" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserCustomize" inverseName="chart" inverseEntity="UserCustomize" syncable="YES"/>
+    </entity>
+    <entity name="ChartContent" representedClassName="ChartContent" syncable="YES" codeGenerationType="class">
+        <attribute name="chartImage" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="chart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chart" inverseName="chartContent" inverseEntity="Chart" syncable="YES"/>
+    </entity>
+    <entity name="ChartInfo" representedClassName="ChartInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="chartImageHeight" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chartImageOrientation" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chartImageWidth" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chartRunway" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationBeginPercentageButtonSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationBeginPercentageLeftSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationBeginPercentageRightSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationBeginPercentageTopSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationDegreeButtonSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationDegreeLeftSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationDegreeRightSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationDegreeTopSide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="chart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chart" inverseName="chartInfo" inverseEntity="Chart" syncable="YES"/>
+    </entity>
+    <entity name="ChartPoint" representedClassName="ChartPoint" syncable="YES" codeGenerationType="class">
+        <attribute name="pointOriginX" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pointOriginY" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pointType" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="chart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chart" inverseName="chartPoint" inverseEntity="Chart" syncable="YES"/>
+    </entity>
+    <entity name="UserCustomize" representedClassName="UserCustomize" syncable="YES" codeGenerationType="class">
+        <attribute name="chartImageOrientation" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chartImageOriginX" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chartImageOriginY" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chartImageScale" attributeType="Float" minValueString="1" maxValueString="5" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="chart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chart" inverseName="userCustomize" inverseEntity="Chart" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Airport" positionX="-63" positionY="-18" width="128" height="45"/>
-        <element name="Chart" positionX="-54" positionY="-9" width="128" height="45"/>
-        <element name="ChartContent" positionX="-36" positionY="9" width="128" height="45"/>
-        <element name="ChartInfo" positionX="-18" positionY="27" width="128" height="45"/>
-        <element name="ChartPoint" positionX="18" positionY="63" width="128" height="45"/>
-        <element name="UserCustomize" positionX="0" positionY="45" width="128" height="45"/>
+        <element name="Airport" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Chart" positionX="-54" positionY="-9" width="128" height="240"/>
+        <element name="ChartContent" positionX="-36" positionY="9" width="128" height="90"/>
+        <element name="ChartInfo" positionX="-18" positionY="27" width="128" height="255"/>
+        <element name="ChartPoint" positionX="18" positionY="63" width="128" height="120"/>
+        <element name="UserCustomize" positionX="0" positionY="45" width="128" height="135"/>
     </elements>
 </model>

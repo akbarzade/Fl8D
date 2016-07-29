@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AC5D6521D4A8D9F001CBB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6511D4A8D9F001CBB70 /* AppDelegate.swift */; };
 		7AC5D6571D4A8D9F001CBB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5D6551D4A8D9F001CBB70 /* Main.storyboard */; };
 		7AC5D65C1D4A8D9F001CBB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5D65B1D4A8D9F001CBB70 /* Assets.xcassets */; };
 		7AC5D65F1D4A8D9F001CBB70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5D65D1D4A8D9F001CBB70 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,40 @@
 		7AC5D6991D4A8F9B001CBB70 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D6981D4A8F9B001CBB70 /* ChartTableViewCell.swift */; };
 		7AC5D69B1D4A8FBF001CBB70 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D69A1D4A8FBF001CBB70 /* MainViewController.swift */; };
 		7AC5D69F1D4A90F6001CBB70 /* Fl8D.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5D69D1D4A90F6001CBB70 /* Fl8D.xcdatamodeld */; };
+		7AF4497E1D4BBAA5005FC4DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4497B1D4BBAA5005FC4DF /* Constants.swift */; };
+		7AF4497F1D4BBAA5005FC4DF /* NotificationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4497C1D4BBAA5005FC4DF /* NotificationKeys.swift */; };
+		7AF449801D4BBAA5005FC4DF /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4497D1D4BBAA5005FC4DF /* UserDefaultsKeys.swift */; };
+		7AF449851D4BBAB2005FC4DF /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449811D4BBAB2005FC4DF /* AirportService.swift */; };
+		7AF449861D4BBAB2005FC4DF /* ChartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449821D4BBAB2005FC4DF /* ChartService.swift */; };
+		7AF449871D4BBAB2005FC4DF /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449831D4BBAB2005FC4DF /* CoreDataHelper.swift */; };
+		7AF449881D4BBAB2005FC4DF /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449841D4BBAB2005FC4DF /* CoreDataStore.swift */; };
+		7AF4498D1D4BBABF005FC4DF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449891D4BBABF005FC4DF /* AppState.swift */; };
+		7AF4498E1D4BBABF005FC4DF /* ChartPointerOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4498A1D4BBABF005FC4DF /* ChartPointerOrigin.swift */; };
+		7AF4498F1D4BBABF005FC4DF /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4498B1D4BBABF005FC4DF /* ChartType.swift */; };
+		7AF449901D4BBABF005FC4DF /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4498C1D4BBABF005FC4DF /* ErrorTypes.swift */; };
+		7AF449921D4BBACA005FC4DF /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449911D4BBACA005FC4DF /* UserDefaults.swift */; };
+		7AF4499A1D4BBAD5005FC4DF /* ApplicationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449931D4BBAD5005FC4DF /* ApplicationHandler.swift */; };
+		7AF4499B1D4BBAD5005FC4DF /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449941D4BBAD5005FC4DF /* ErrorHandler.swift */; };
+		7AF4499C1D4BBAD5005FC4DF /* InterfaceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449951D4BBAD5005FC4DF /* InterfaceHandler.swift */; };
+		7AF4499D1D4BBAD5005FC4DF /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449961D4BBAD5005FC4DF /* LocationHandler.swift */; };
+		7AF4499E1D4BBAD5005FC4DF /* LogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449971D4BBAD5005FC4DF /* LogHandler.swift */; };
+		7AF4499F1D4BBAD5005FC4DF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449981D4BBAD5005FC4DF /* Manager.swift */; };
+		7AF449A01D4BBAD5005FC4DF /* StatusBarHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449991D4BBAD5005FC4DF /* StatusBarHandler.swift */; };
+		7AF449A21D4BBADF005FC4DF /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449A11D4BBADF005FC4DF /* SeedData.swift */; };
+		7AF449A41D4BBB53005FC4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449A31D4BBB53005FC4DF /* AppDelegate.swift */; };
+		7AF449C81D4BC369005FC4DF /* Airport+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449C21D4BC369005FC4DF /* Airport+CoreDataClass.swift */; };
+		7AF449C91D4BC369005FC4DF /* Chart+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449C31D4BC369005FC4DF /* Chart+CoreDataClass.swift */; };
+		7AF449CA1D4BC369005FC4DF /* ChartContent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449C41D4BC369005FC4DF /* ChartContent+CoreDataClass.swift */; };
+		7AF449CB1D4BC369005FC4DF /* ChartInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449C51D4BC369005FC4DF /* ChartInfo+CoreDataClass.swift */; };
+		7AF449CC1D4BC369005FC4DF /* ChartPoint+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449C61D4BC369005FC4DF /* ChartPoint+CoreDataClass.swift */; };
+		7AF449CD1D4BC369005FC4DF /* UserCustomize+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449C71D4BC369005FC4DF /* UserCustomize+CoreDataClass.swift */; };
+		7AF449D51D4BC373005FC4DF /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449CE1D4BC373005FC4DF /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */; };
+		7AF449D61D4BC373005FC4DF /* Airport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449CF1D4BC373005FC4DF /* Airport+CoreDataProperties.swift */; };
+		7AF449D71D4BC373005FC4DF /* Chart+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449D01D4BC373005FC4DF /* Chart+CoreDataProperties.swift */; };
+		7AF449D81D4BC373005FC4DF /* ChartContent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449D11D4BC373005FC4DF /* ChartContent+CoreDataProperties.swift */; };
+		7AF449D91D4BC373005FC4DF /* ChartInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449D21D4BC373005FC4DF /* ChartInfo+CoreDataProperties.swift */; };
+		7AF449DA1D4BC373005FC4DF /* ChartPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449D31D4BC373005FC4DF /* ChartPoint+CoreDataProperties.swift */; };
+		7AF449DB1D4BC373005FC4DF /* UserCustomize+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF449D41D4BC373005FC4DF /* UserCustomize+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +72,6 @@
 
 /* Begin PBXFileReference section */
 		7AC5D64E1D4A8D9F001CBB70 /* Fl8D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fl8D.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AC5D6511D4A8D9F001CBB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AC5D6561D4A8D9F001CBB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AC5D65B1D4A8D9F001CBB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AC5D65E1D4A8D9F001CBB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +87,40 @@
 		7AC5D6981D4A8F9B001CBB70 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartTableViewCell.swift; path = Views/TerminalCharts/ChartTableViewCell.swift; sourceTree = "<group>"; };
 		7AC5D69A1D4A8FBF001CBB70 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		7AC5D69E1D4A90F6001CBB70 /* Fl8D.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fl8D.xcdatamodel; sourceTree = "<group>"; };
+		7AF4497B1D4BBAA5005FC4DF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Helpers/Constants/Constants.swift; sourceTree = "<group>"; };
+		7AF4497C1D4BBAA5005FC4DF /* NotificationKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationKeys.swift; path = Helpers/Constants/NotificationKeys.swift; sourceTree = "<group>"; };
+		7AF4497D1D4BBAA5005FC4DF /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsKeys.swift; path = Helpers/Constants/UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		7AF449811D4BBAB2005FC4DF /* AirportService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirportService.swift; path = Helpers/CoreData/AirportService.swift; sourceTree = "<group>"; };
+		7AF449821D4BBAB2005FC4DF /* ChartService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartService.swift; path = Helpers/CoreData/ChartService.swift; sourceTree = "<group>"; };
+		7AF449831D4BBAB2005FC4DF /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = Helpers/CoreData/CoreDataHelper.swift; sourceTree = "<group>"; };
+		7AF449841D4BBAB2005FC4DF /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStore.swift; path = Helpers/CoreData/CoreDataStore.swift; sourceTree = "<group>"; };
+		7AF449891D4BBABF005FC4DF /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = Helpers/Enums/AppState.swift; sourceTree = "<group>"; };
+		7AF4498A1D4BBABF005FC4DF /* ChartPointerOrigin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartPointerOrigin.swift; path = Helpers/Enums/ChartPointerOrigin.swift; sourceTree = "<group>"; };
+		7AF4498B1D4BBABF005FC4DF /* ChartType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartType.swift; path = Helpers/Enums/ChartType.swift; sourceTree = "<group>"; };
+		7AF4498C1D4BBABF005FC4DF /* ErrorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorTypes.swift; path = Helpers/Enums/ErrorTypes.swift; sourceTree = "<group>"; };
+		7AF449911D4BBACA005FC4DF /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaults.swift; path = Helpers/Extensions/UserDefaults.swift; sourceTree = "<group>"; };
+		7AF449931D4BBAD5005FC4DF /* ApplicationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationHandler.swift; path = Helpers/Handlers/ApplicationHandler.swift; sourceTree = "<group>"; };
+		7AF449941D4BBAD5005FC4DF /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorHandler.swift; path = Helpers/Handlers/ErrorHandler.swift; sourceTree = "<group>"; };
+		7AF449951D4BBAD5005FC4DF /* InterfaceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterfaceHandler.swift; path = Helpers/Handlers/InterfaceHandler.swift; sourceTree = "<group>"; };
+		7AF449961D4BBAD5005FC4DF /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHandler.swift; path = Helpers/Handlers/LocationHandler.swift; sourceTree = "<group>"; };
+		7AF449971D4BBAD5005FC4DF /* LogHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogHandler.swift; path = Helpers/Handlers/LogHandler.swift; sourceTree = "<group>"; };
+		7AF449981D4BBAD5005FC4DF /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Helpers/Handlers/Manager.swift; sourceTree = "<group>"; };
+		7AF449991D4BBAD5005FC4DF /* StatusBarHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusBarHandler.swift; path = Helpers/Handlers/StatusBarHandler.swift; sourceTree = "<group>"; };
+		7AF449A11D4BBADF005FC4DF /* SeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeedData.swift; path = Helpers/SeedData/SeedData.swift; sourceTree = "<group>"; };
+		7AF449A31D4BBB53005FC4DF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppConfigurations/AppDelegate.swift; sourceTree = "<group>"; };
+		7AF449C21D4BC369005FC4DF /* Airport+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Airport+CoreDataClass.swift"; path = "CoreData/Models/Airport+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7AF449C31D4BC369005FC4DF /* Chart+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Chart+CoreDataClass.swift"; path = "CoreData/Models/Chart+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7AF449C41D4BC369005FC4DF /* ChartContent+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChartContent+CoreDataClass.swift"; path = "CoreData/Models/ChartContent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7AF449C51D4BC369005FC4DF /* ChartInfo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChartInfo+CoreDataClass.swift"; path = "CoreData/Models/ChartInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7AF449C61D4BC369005FC4DF /* ChartPoint+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChartPoint+CoreDataClass.swift"; path = "CoreData/Models/ChartPoint+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7AF449C71D4BC369005FC4DF /* UserCustomize+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserCustomize+CoreDataClass.swift"; path = "CoreData/Models/UserCustomize+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7AF449CE1D4BC373005FC4DF /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "___COREDATA_DATAMODELNAME___+CoreDataModel.swift"; path = "CoreData/Entities/___COREDATA_DATAMODELNAME___+CoreDataModel.swift"; sourceTree = "<group>"; };
+		7AF449CF1D4BC373005FC4DF /* Airport+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Airport+CoreDataProperties.swift"; path = "CoreData/Entities/Airport+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7AF449D01D4BC373005FC4DF /* Chart+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Chart+CoreDataProperties.swift"; path = "CoreData/Entities/Chart+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7AF449D11D4BC373005FC4DF /* ChartContent+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChartContent+CoreDataProperties.swift"; path = "CoreData/Entities/ChartContent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7AF449D21D4BC373005FC4DF /* ChartInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChartInfo+CoreDataProperties.swift"; path = "CoreData/Entities/ChartInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7AF449D31D4BC373005FC4DF /* ChartPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChartPoint+CoreDataProperties.swift"; path = "CoreData/Entities/ChartPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7AF449D41D4BC373005FC4DF /* UserCustomize+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserCustomize+CoreDataProperties.swift"; path = "CoreData/Entities/UserCustomize+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				7AC5D6951D4A8F0D001CBB70 /* AppConfigurations */,
-				7AC5D6511D4A8D9F001CBB70 /* AppDelegate.swift */,
 				7AC5D65B1D4A8D9F001CBB70 /* Assets.xcassets */,
 				7AC5D6921D4A8EEB001CBB70 /* Controllers */,
 				7AC5D6911D4A8EDF001CBB70 /* CoreData */,
@@ -151,6 +216,9 @@
 		7AC5D6911D4A8EDF001CBB70 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				7AF449A71D4BC2F4005FC4DF /* Models */,
+				7AF449A61D4BC2E9005FC4DF /* Entities */,
+				7AF449A51D4BC2E1005FC4DF /* DataSources */,
 				7AC5D69D1D4A90F6001CBB70 /* Fl8D.xcdatamodeld */,
 			);
 			name = CoreData;
@@ -167,6 +235,12 @@
 		7AC5D6931D4A8EF6001CBB70 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7AF449741D4BB941005FC4DF /* Constants */,
+				7AF4496B1D4BB8B6005FC4DF /* CoreData */,
+				7AF449751D4BB949005FC4DF /* Enums */,
+				7AF449761D4BB94E005FC4DF /* Extensions */,
+				7AF449771D4BB956005FC4DF /* Handlers */,
+				7AF449781D4BB95E005FC4DF /* SeedData */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -183,6 +257,7 @@
 		7AC5D6951D4A8F0D001CBB70 /* AppConfigurations */ = {
 			isa = PBXGroup;
 			children = (
+				7AF449A31D4BBB53005FC4DF /* AppDelegate.swift */,
 			);
 			name = AppConfigurations;
 			sourceTree = "<group>";
@@ -209,6 +284,102 @@
 				7AC5D65D1D4A8D9F001CBB70 /* LaunchScreen.storyboard */,
 			);
 			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		7AF4496B1D4BB8B6005FC4DF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7AF449811D4BBAB2005FC4DF /* AirportService.swift */,
+				7AF449821D4BBAB2005FC4DF /* ChartService.swift */,
+				7AF449831D4BBAB2005FC4DF /* CoreDataHelper.swift */,
+				7AF449841D4BBAB2005FC4DF /* CoreDataStore.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		7AF449741D4BB941005FC4DF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7AF4497B1D4BBAA5005FC4DF /* Constants.swift */,
+				7AF4497C1D4BBAA5005FC4DF /* NotificationKeys.swift */,
+				7AF4497D1D4BBAA5005FC4DF /* UserDefaultsKeys.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		7AF449751D4BB949005FC4DF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7AF449891D4BBABF005FC4DF /* AppState.swift */,
+				7AF4498A1D4BBABF005FC4DF /* ChartPointerOrigin.swift */,
+				7AF4498B1D4BBABF005FC4DF /* ChartType.swift */,
+				7AF4498C1D4BBABF005FC4DF /* ErrorTypes.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		7AF449761D4BB94E005FC4DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7AF449911D4BBACA005FC4DF /* UserDefaults.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7AF449771D4BB956005FC4DF /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				7AF449931D4BBAD5005FC4DF /* ApplicationHandler.swift */,
+				7AF449941D4BBAD5005FC4DF /* ErrorHandler.swift */,
+				7AF449951D4BBAD5005FC4DF /* InterfaceHandler.swift */,
+				7AF449961D4BBAD5005FC4DF /* LocationHandler.swift */,
+				7AF449971D4BBAD5005FC4DF /* LogHandler.swift */,
+				7AF449981D4BBAD5005FC4DF /* Manager.swift */,
+				7AF449991D4BBAD5005FC4DF /* StatusBarHandler.swift */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
+		7AF449781D4BB95E005FC4DF /* SeedData */ = {
+			isa = PBXGroup;
+			children = (
+				7AF449A11D4BBADF005FC4DF /* SeedData.swift */,
+			);
+			name = SeedData;
+			sourceTree = "<group>";
+		};
+		7AF449A51D4BC2E1005FC4DF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		7AF449A61D4BC2E9005FC4DF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7AF449CE1D4BC373005FC4DF /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift */,
+				7AF449CF1D4BC373005FC4DF /* Airport+CoreDataProperties.swift */,
+				7AF449D01D4BC373005FC4DF /* Chart+CoreDataProperties.swift */,
+				7AF449D11D4BC373005FC4DF /* ChartContent+CoreDataProperties.swift */,
+				7AF449D21D4BC373005FC4DF /* ChartInfo+CoreDataProperties.swift */,
+				7AF449D31D4BC373005FC4DF /* ChartPoint+CoreDataProperties.swift */,
+				7AF449D41D4BC373005FC4DF /* UserCustomize+CoreDataProperties.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		7AF449A71D4BC2F4005FC4DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7AF449C21D4BC369005FC4DF /* Airport+CoreDataClass.swift */,
+				7AF449C31D4BC369005FC4DF /* Chart+CoreDataClass.swift */,
+				7AF449C41D4BC369005FC4DF /* ChartContent+CoreDataClass.swift */,
+				7AF449C51D4BC369005FC4DF /* ChartInfo+CoreDataClass.swift */,
+				7AF449C61D4BC369005FC4DF /* ChartPoint+CoreDataClass.swift */,
+				7AF449C71D4BC369005FC4DF /* UserCustomize+CoreDataClass.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,10 +522,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF449D71D4BC373005FC4DF /* Chart+CoreDataProperties.swift in Sources */,
+				7AF449A41D4BBB53005FC4DF /* AppDelegate.swift in Sources */,
+				7AF449871D4BBAB2005FC4DF /* CoreDataHelper.swift in Sources */,
+				7AF449CA1D4BC369005FC4DF /* ChartContent+CoreDataClass.swift in Sources */,
+				7AF4499C1D4BBAD5005FC4DF /* InterfaceHandler.swift in Sources */,
+				7AF4499A1D4BBAD5005FC4DF /* ApplicationHandler.swift in Sources */,
+				7AF4497F1D4BBAA5005FC4DF /* NotificationKeys.swift in Sources */,
+				7AF449CB1D4BC369005FC4DF /* ChartInfo+CoreDataClass.swift in Sources */,
+				7AF4498F1D4BBABF005FC4DF /* ChartType.swift in Sources */,
+				7AF449851D4BBAB2005FC4DF /* AirportService.swift in Sources */,
+				7AF449921D4BBACA005FC4DF /* UserDefaults.swift in Sources */,
+				7AF449C81D4BC369005FC4DF /* Airport+CoreDataClass.swift in Sources */,
+				7AF4498D1D4BBABF005FC4DF /* AppState.swift in Sources */,
+				7AF449881D4BBAB2005FC4DF /* CoreDataStore.swift in Sources */,
+				7AF449801D4BBAA5005FC4DF /* UserDefaultsKeys.swift in Sources */,
+				7AF449D61D4BC373005FC4DF /* Airport+CoreDataProperties.swift in Sources */,
+				7AF449901D4BBABF005FC4DF /* ErrorTypes.swift in Sources */,
+				7AF4497E1D4BBAA5005FC4DF /* Constants.swift in Sources */,
 				7AC5D6991D4A8F9B001CBB70 /* ChartTableViewCell.swift in Sources */,
-				7AC5D6521D4A8D9F001CBB70 /* AppDelegate.swift in Sources */,
+				7AF449A01D4BBAD5005FC4DF /* StatusBarHandler.swift in Sources */,
+				7AF449D81D4BC373005FC4DF /* ChartContent+CoreDataProperties.swift in Sources */,
+				7AF4498E1D4BBABF005FC4DF /* ChartPointerOrigin.swift in Sources */,
+				7AF449D51D4BC373005FC4DF /* ___COREDATA_DATAMODELNAME___+CoreDataModel.swift in Sources */,
+				7AF4499D1D4BBAD5005FC4DF /* LocationHandler.swift in Sources */,
 				7AC5D69B1D4A8FBF001CBB70 /* MainViewController.swift in Sources */,
+				7AF4499B1D4BBAD5005FC4DF /* ErrorHandler.swift in Sources */,
+				7AF449DB1D4BC373005FC4DF /* UserCustomize+CoreDataProperties.swift in Sources */,
+				7AF4499E1D4BBAD5005FC4DF /* LogHandler.swift in Sources */,
+				7AF449A21D4BBADF005FC4DF /* SeedData.swift in Sources */,
+				7AF449CD1D4BC369005FC4DF /* UserCustomize+CoreDataClass.swift in Sources */,
+				7AF449DA1D4BC373005FC4DF /* ChartPoint+CoreDataProperties.swift in Sources */,
+				7AF449C91D4BC369005FC4DF /* Chart+CoreDataClass.swift in Sources */,
+				7AF4499F1D4BBAD5005FC4DF /* Manager.swift in Sources */,
 				7AC5D69F1D4A90F6001CBB70 /* Fl8D.xcdatamodeld in Sources */,
+				7AF449CC1D4BC369005FC4DF /* ChartPoint+CoreDataClass.swift in Sources */,
+				7AF449861D4BBAB2005FC4DF /* ChartService.swift in Sources */,
+				7AF449D91D4BC373005FC4DF /* ChartInfo+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +797,7 @@
 				7AC5D67B1D4A8D9F001CBB70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AC5D67C1D4A8D9F001CBB70 /* Build configuration list for PBXNativeTarget "Fl8DTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +806,7 @@
 				7AC5D67E1D4A8D9F001CBB70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AC5D67F1D4A8D9F001CBB70 /* Build configuration list for PBXNativeTarget "Fl8DUITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +815,7 @@
 				7AC5D6811D4A8D9F001CBB70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
